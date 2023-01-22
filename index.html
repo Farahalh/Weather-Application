@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script
+      src="https://kit.fontawesome.com/1125479301.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-body body-holder">
+          <div class="container text-center">
+            <div class="wrapper">
+              <form id="city-form">
+                <input
+                  type="text"
+                  id="input-city"
+                  placeholder="Enter city name here"
+                  class="form-control search-box"
+                />
+
+                <input
+                  type="submit"
+                  value="search"
+                  id="search-button"
+                  class="search"
+                />
+
+                <button type="click" id="my-location" class="current">
+                  current
+                </button>
+              </form>
+            </div>
+
+            <div class="container text-center"></div>
+            <div class="row">
+              <div class="col-6">
+                <i class="fa-solid fa-cloud main-icon" id="temperature"></i>
+                <a href="a" id="celsius-link">°C</a>
+                <a href="a" id="fahrenheit-link">°F</a>
+                <div id="description">Description</div>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
+              </div>
+
+              <div class="col-6">
+                <div id="current-city">Gothenburg</div>
+                <div id="current-date">17th december 9</div>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="container text-center">
+            <div class="row">
+              <div class="col">
+                <i class="days"> today </i>
+              </div>
+              <div class="col">
+                <i class="days"> sun </i>
+              </div>
+              <div class="col">
+                <i class="days"> mon </i>
+              </div>
+              <div class="col">
+                <i class="days"> tue </i>
+              </div>
+              <div class="col">
+                <i class="days"> wed </i>
+              </div>
+              <div class="col">
+                <i class="days"> thu </i>
+              </div>
+              <div class="col">
+                <i class="days"> fri </i>
+              </div>
+            </div>
+          </div>
+
+          <div class="container text-center">
+            <div class="row">
+              <div class="col weather-icon">
+                <i class="fa-solid fa-cloud"></i>
+              </div>
+              <div class="col weather-icon">
+                <i class="fa-solid fa-cloud"></i>
+              </div>
+              <div class="col weather-icon">
+                <i class="fa-solid fa-snowflake"></i>
+              </div>
+              <div class="col weather-icon">
+                <i class="fa-solid fa-sun"></i>
+              </div>
+              <div class="col weather-icon">
+                <i class="fa-solid fa-sun"></i>
+              </div>
+              <div class="col weather-icon">
+                <i class="fa-solid fa-sun"></i>
+              </div>
+              <div class="col weather-icon">
+                <i class="fa-solid fa-snowflake"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="container text-center">
+            <div class="row">
+              <div class="col">
+                <i class="days"> 2° </i>
+              </div>
+              <div class="col">
+                <i class="days"> 3° </i>
+              </div>
+              <div class="col">
+                <i class="days"> 1° </i>
+              </div>
+              <div class="col">
+                <i class="days"> 6° </i>
+              </div>
+              <div class="col">
+                <i class="days"> 6° </i>
+              </div>
+              <div class="col">
+                <i class="days"> 5° </i>
+              </div>
+              <div class="col">
+                <i class="days"> 0° </i>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <a href="https://github.com/Farahalh/Weather-Application"
+            >Open-source code <span>by Farah</span></a
+          >
+        </div>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
